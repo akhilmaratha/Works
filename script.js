@@ -78,17 +78,9 @@ function slide() {
     });
 }
 
-function mousemover(){
-    Shery.mouseFollower({
-        skew: true,
-        ease: "cubic-bezier(0.23, 1, 0.320, 1)",
-        duration: 1
-      });
-      Shery.makeMagnet("#nav .nav-links h4");
-}
+
 
 loading();
 locomotive();
 showimg();
 slide();
-mousemover();
