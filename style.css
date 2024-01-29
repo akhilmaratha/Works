@@ -1,7 +1,15 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-family: "Freight Big Pro";
 }
 
@@ -24,9 +32,15 @@ body {
     position: fixed;
     color: #fff;
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     z-index: 99;
     /* display: none; */
  
@@ -45,7 +59,8 @@ body {
     height: 100%;
     width: 100%;
     position: absolute;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     z-index: 6;
 }
 
@@ -71,9 +86,14 @@ body {
     color: #000;
     background-color:#f5e418;
     padding: 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content:space-around;
-    align-items: center;
+    -ms-flex-pack:distribute;
+        justify-content:space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 20vh;
 }
 #nav .svg{
@@ -86,17 +106,29 @@ body {
     fill: #000;
 }
 #nav .nav-links{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 1.5vw;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 
 }
 #nav .nav-links #slide{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 1.5vw;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 
 }
 
@@ -117,23 +149,44 @@ body {
 
 }
 #nav .nav-links #prj {
-    transition: transform 0.8s ease 
+    -webkit-transition: -webkit-transform 0.8s ease;
+    transition: -webkit-transform 0.8s ease;
+    -o-transition: transform 0.8s ease;
+    transition: transform 0.8s ease;
+    transition: transform 0.8s ease, -webkit-transform 0.8s ease 
   }  
 
  #nav .nav-links #slide {
 
+    -webkit-transition: -webkit-transform 0.9s ease;
+
+    transition: -webkit-transform 0.9s ease;
+
+    -o-transition: transform 0.9s ease;
+
     transition: transform 0.9s ease;
+
+    transition: transform 0.9s ease, -webkit-transform 0.9s ease;
   } 
     
 #page1 {
     height: 100vh;
     width: 100%;
     background-color: #f5e418;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 #page1 h1 {
@@ -146,10 +199,16 @@ body {
 #page1 .links{
     margin-top: 12vw;
     gap: 38vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
 #page1 .links h2{
     font-size: 2vw;
@@ -167,10 +226,19 @@ body {
     background-size: cover;
     background-position: center;
     color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
 
 }
@@ -187,9 +255,14 @@ body {
     width: 40%;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background: -webkit-gradient(linear, left top, right top, from(#f5e418), color-stop(#f5e418), to(#f5e31be7));
+    background: -o-linear-gradient(left, #f5e418, #f5e418, #f5e31be7);
     background: linear-gradient(to right, #f5e418, #f5e418, #f5e31be7);
-    box-shadow: 10px 0px 20px 20px #f5e418, -10px 0px 20px 20px #f5e418;
+    -webkit-box-shadow: 10px 0px 20px 20px #f5e418, -10px 0px 20px 20px #f5e418;
+            box-shadow: 10px 0px 20px 20px #f5e418, -10px 0px 20px 20px #f5e418;
     height: 100%;
     z-index: 8;
 }
@@ -210,10 +283,14 @@ body {
     white-space: nowrap;
     top: 50%;
     overflow-x: hidden;
-    transform: translate(0, -45%) scaleY(0);
+    -webkit-transform: translate(0, -45%) scaleY(0);
+        -ms-transform: translate(0, -45%) scaleY(0);
+            transform: translate(0, -45%) scaleY(0);
 
     position: absolute;
     padding: 8px 0;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
     transition: all ease 0.3s;
 
 }
@@ -222,10 +299,14 @@ body {
 
     display: inline-block;
     white-space: nowrap;
-    animation-name: moving;
-    animation-duration: 5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    -webkit-animation-name: moving;
+            animation-name: moving;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
 }
 
 .elem .moving .moving-in h5 {
@@ -236,22 +317,42 @@ body {
     text-transform: uppercase;
     font-family: gilroy;
     margin-right: 35px;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
     transition: all ease 0.3s;
-    transition-delay: 0.2s;
+    -webkit-transition-delay: 0.2s;
+         -o-transition-delay: 0.2s;
+            transition-delay: 0.2s;
     opacity: 0;
+}
+
+@-webkit-keyframes moving {
+    from {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
+
+    to {
+        -webkit-transform: translateX(-100%);
+                transform: translateX(-100%);
+    }
 }
 
 @keyframes moving {
     from {
-        transform: translateX(0);
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
     }
 
     to {
-        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+                transform: translateX(-100%);
     }
 }
 .elem:hover .moving {
-    transform: translate(0, -45%) scaleY(1);
+    -webkit-transform: translate(0, -45%) scaleY(1);
+        -ms-transform: translate(0, -45%) scaleY(1);
+            transform: translate(0, -45%) scaleY(1);
 }
 .elem:hover .moving h5 {
     opacity: 1;
@@ -267,6 +368,8 @@ body {
 
 .image-container {
     padding: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -282,8 +385,12 @@ body {
 .image-div img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
-    object-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    -webkit-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
     transition: all ease 0.5s;
 }
 
@@ -292,10 +399,18 @@ body {
     width: 100%;
     background-color: #00000054;
     position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 10px;
+    -webkit-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
     transition: all ease 0.5s;
     z-index: 10;
 }
@@ -307,6 +422,8 @@ body {
     color: #fff;
     line-height: 2.5vw;
     opacity: 0;
+    -webkit-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
     transition: all ease 0.5s;
 }
 
@@ -325,10 +442,19 @@ body {
     height: 40vh;
     width: 100%;
     background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 4vw;
 }
 #footer #foot{
@@ -344,10 +470,19 @@ body {
 }
 #footer .flexitem{
     display: inline;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 
 }
 #footer i{
